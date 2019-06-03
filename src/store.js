@@ -34,7 +34,7 @@ export default new Vuex.Store({
       const names = await context.dispatch(GET_NAMES);
       names.push(name);
       localStorage.setItem("names", JSON.stringify(names));
-      context.commit(ADD_NAME, {name: name});
+      context.commit(SET_NAMES, {names: names});
     },
     async [CLEAR_NAME] (context) {
       context.commit(SET_NAMES, {names: []});
