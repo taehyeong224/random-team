@@ -14,11 +14,7 @@ export default new Vuex.Store({
       state.names = payload.names;
     },
     [ADD_NAME] (state, payload) {
-      console.log("payload : ", payload)
-      console.log("length : ", state.names.length)
       state.names.push(payload.name);
-      console.log("length : ", state.names.length)
-      
     }
   },
   actions: {
