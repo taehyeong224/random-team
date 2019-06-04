@@ -78,14 +78,13 @@ export default {
         lineHeight: "20px", 
         color: "rgb(255, 255, 255)",
         fontSize: "12px",
-        boxShadow: "none",
-        backgroundColor: `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+        boxShadow: "none"
       }
     };
   },
   computed: {
     randomTeamColor: function () {
-      return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`
+      return ``
     }
   },
   created: function() {
